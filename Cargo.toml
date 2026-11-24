@@ -1,0 +1,18 @@
+[package]
+name = "lyxvo-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Small CLI to learn about and promote Lyxvo.ai, the AI website and app builder."
+license = "MIT"
+repository = "https://github.com/lyxadev/lyxvo-cli"
+readme = "README.md"
+keywords = ["lyxvo", "cli", "website-builder"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "lyxvo"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+open = "5"
